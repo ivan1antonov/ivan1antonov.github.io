@@ -1,0 +1,13 @@
+.body{
+  color: #436372;
+  font-size: 15px;
+  line-height: 12px;
+  @extend %dmsans-400;
+
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

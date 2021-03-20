@@ -3,7 +3,91 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
 
+.menu{
+    align-self: center;  
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+  padding-left: 32px;
+  }
+  &__list-link{
+    color: $header;
+    text-decoration: none;
+    @extend %rubik-500;
+  }
+}
+.user-nav{
+  display: flex;
+  &__link{
+  }
+  &__search{
+    padding: 18px;
+    background-color: $header-accent;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  &__like{
+    padding: 22px 30px 12px 42px;
+  }
+  &__buy{
+    padding: 22px 42px 12px 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      height: 32px;
+      width: 1px;
+      left: 0;
+      top: 12px;
+
+    }
+  }
+  &__inners{
+    display: flex;
+    margin-right: 18px;
+    background-color: $header-default;
+    border-radius: 26px;
+  }
+  &__inner{
+    position: relative;   
+  }
+  &__num{
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    border-radius: 50%;  
+    top: -45%;
+    right: -50%;
+  }
+  &__btn{
+    padding: 12px 16px;
+    border: none;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+  &__btn-img{
+    width: 20px;
+    height: 20px;    
+  }
+ 
+}
 
 
 @import 'media';

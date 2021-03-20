@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="app/css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
+
 <body>
-  Loasdadsasdasdasdadazcxczxczxasdasdasdaasd
-  aasdfnjklasbfljkasdf
-  askldfl;akabadksfnbnnmvkasalkaklsdjfnasdfnasdjkfnklasdncv
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, cupiditate rerum hic odio alias deleniti? Accusamus sint autem, iusto nemo illum sapiente, facilis fuga veniam maiores suscipit earum alias reprehenderit.
-  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Знаках то если заглавных подпоясал переписывается продолжил буквоград ведущими. Образ страна имени взгляд пунктуация вскоре продолжил злых это, ты заголовок.
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="лого">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Home+</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Services</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">About</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Pages+</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">News</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__search" href="#"><img class="user-nav__link-img"
+              src="images/icon/icon-search.svg" alt="header icon"></a>
+          <div class="user-nav__inners">
+            <a class="user-nav__link user-nav__like" href="#">
+              <div class="user-nav__inner">
+                <img class="user-nav__link-img" src="images/icon/icon-like.svg" alt="header icon">
+                <span class="user-nav__num user-nav__num-like">0</span>
+              </div>
+            </a>
+            <a class="user-nav__link user-nav__buy" href="#">
+              <div class="user-nav__inner">
+                <img class="user-nav__link-img" src="images/icon/icon-buy.svg" alt="header icon">
+                <span class="user-nav__num user-nav__num-buy">0</span>
+              </div>
+            </a>
+          </div>
+          <button class="user-nav__btn">
+            <img class="user-nav__btn-img" src="images/icon/icon-yet.svg" alt="меню пользователя">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
