@@ -67,7 +67,7 @@ next.addEventListener('click', () => nextSong());
 
 function changeLine (e) {
   const {duration, currentTime} = e.srcElement;
-    timeCurrent.innerHTML = currentTime % 60 <= 9 ? `${Math.round(currentTime / 60)}:0${Math.round(currentTime % 60)}` : `${Math.round(currentTime / 60)}:${Math.round(currentTime % 60)}`;
+    timeCurrent.innerHTML = currentTime % 60 <= 9 ? `${Math.floor(currentTime / 60)}:0${Math.round(currentTime % 60)}` : `${Math.floor(currentTime / 60)}:${Math.round(currentTime % 60)}`;
  
   timeLength.innerHTML = `${Math.round(duration / 60)}:${Math.round(duration % 60)}`;
   const lineProcent = (100 - (currentTime / duration) * 100);
