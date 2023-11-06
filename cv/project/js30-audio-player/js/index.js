@@ -14,14 +14,19 @@ const wramper = document.querySelector('.wramper'),
       nameSongers = ['Beyonce', 'Dua Lipa'],
       nameSongs = ["Don't Hurt Yourself", "don't start now"];
 let index = 0;
+//preload song
+audio.addEventListener('loadedmetadata', () => {
+    timeLength.textContent = `${Math.round(audio.duration / 60)}:${Math.round(audio.duration % 60)}`;
+});
 //Current Song
 function currentSong(artist, song) {
   titleName.innerHTML = artist;
   titleSong.innerHTML = song;
   audio.src = `./song/${artist}.mp3`;
   wramper.style.backgroundImage = "url(./images/poster" + (index + 1) + ".png)";
-  audioPoster.src = `./images/poster${index + 1}.png`;
+  audioPoster.src = `./images/poster${index + 1}.png`;  
 };
+
 currentSong(nameSongers[index], nameSongs[index]);
 // function play
 function playSong () {
@@ -64,10 +69,9 @@ function prevSong(){
 prev.addEventListener('click', () => prevSong());
 next.addEventListener('click', () => nextSong());
 // Play Line
-
 function changeLine (e) {
   const {duration, currentTime} = e.srcElement;
-  timeCurrent.innerHTML = Math.round(currentTime % 60) <= 9 ? `${Math.floor(currentTime / 60)}:0${Math.round(currentTime % 60)}` : `${Math.floor(currentTime / 60)}:${Math.round(currentTime % 60)}`; 
+  timeCurrent.innerHTML = `${Math.floor(currentTime / 60)}:${Math.floor(currentTime % 60) < 10 ? '0' : ''}${Math.floor(currentTime % 60)}`;
   timeLength.innerHTML = `${Math.round(duration / 60)}:${Math.round(duration % 60)}`;
   const lineProcent = (100 - (currentTime / duration) * 100);
   progressCurrent.style.width = `${lineProcent}%`;
