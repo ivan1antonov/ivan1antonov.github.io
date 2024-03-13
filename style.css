@@ -182,13 +182,13 @@ dd {
   background-color: #ffffff;
 }
 .additional-skills__html::after{
-  width: calc(100% - 10%);
+  width: calc(100% - 5%);
 }
 .additional-skills__css::after{
-  width: calc(100% - 20%);
+  width: calc(100% - 8%);
 }
 .additional-skills__js::after{
-  width: calc(100% - 65%);
+  width: calc(100% - 45%);
 }
 .additional-skills__html{
   padding-top: 20px;
