@@ -188,7 +188,7 @@ dd {
   width: calc(100% - 20%);
 }
 .additional-skills__js::after{
-  width: calc(100% - 65%);
+  width: calc(100% - 45%);
 }
 .additional-skills__html{
   padding-top: 20px;
