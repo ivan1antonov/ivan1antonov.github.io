@@ -184,11 +184,12 @@ dd {
   height: 10px;
   background-color: #ffffff;
 }
-.additional-skills__html::after {
-  width: calc(100% - 10%);
+
+.additional-skills__html::after{
+  width: calc(100% - 5%);
 }
-.additional-skills__css::after {
-  width: calc(100% - 20%);
+.additional-skills__css::after{
+  width: calc(100% - 8%);
 }
 .additional-skills__js::after {
   width: calc(100% - 40%);
